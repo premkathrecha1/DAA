@@ -779,17 +779,39 @@
 // }
 
 
+// #include <iostream>
+// using namespace std;
+
+// int printHello(){
+//     cout << "hello\n";
+//     return 3;
+// }
+
+// int main(){
+//    int val = printHello();
+//    cout << "val =" << val << endl;
+   
+//     return 0;
+// }
+//output: hello
+//        val = 3
+
+
+
 #include <iostream>
 using namespace std;
 
-void printHello(){
-    cout << "hello\n";
-    return 3;
+int sumN(int n) {
+    int sum = 0;
+    for(int i=1; i<=n; i++) {
+        sum += i;
+    }
+return sum;
 }
 
 int main(){
-   int val = printHello();
-   cout << "val =" << val << endl;
-   
+    cout << sumN(5) << endl; // output: 15
+    cout << sumN(10) << endl; // output: 55
+
     return 0;
 }
