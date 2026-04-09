@@ -469,7 +469,7 @@
 //     }
 
 //     cout << "after the pattern : " << num << endl;
-//     return 0;
+//    return 0;
 // }      // output: 1 2 3 
 //                   4 5 6
 //                   7 8 9
@@ -798,6 +798,27 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+// int sumN(int n) {
+//     int sum = 0;
+//     for(int i=1; i<=n; i++) {
+//         sum += i;
+//     }
+// return sum;
+// }
+
+// int main(){
+//     cout << sumN(5) << endl; // output: 15
+//     cout << sumN(10) << endl; // output: 55
+
+//     return 0;
+// }
+
+
+//factoriLN
+
 #include <iostream>
 using namespace std;
 
@@ -809,9 +830,19 @@ int sumN(int n) {
 return sum;
 }
 
+int factorialN(int n) {
+    int fact = 1;
+
+    for(int i=1; i<=n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
 int main(){
-    cout << sumN(5) << endl; // output: 15
-    cout << sumN(10) << endl; // output: 55
+    cout << factorialN(5) << endl; 
+    cout << sumN(10) << endl; 
 
     return 0;
 }
+
